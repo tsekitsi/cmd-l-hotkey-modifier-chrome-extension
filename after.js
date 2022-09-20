@@ -50,9 +50,11 @@ const resetPopup = () => {
 
 document.addEventListener('keydown', async event => {
     if ((event.metaKey || event.ctrlKey) && (event.key === 'l')) {
+        const peek = document.querySelector('.notion-peek-renderer a');
         // Copy the current URL to the clipboard:
         await navigator.clipboard.writeText(
-            document.querySelector('.notion-peek-renderer a').href
+            peek ? document.querySelector('.notion-peek-renderer a') :
+            window.location.href
         );
         displayPopup();
         await new Promise(r => setTimeout(r, 5000)); // sleep
