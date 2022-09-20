@@ -2,7 +2,7 @@
   "name": "Notion: copy URL with the \"cmd+L\" shortcut on Google Chrome",
   "description": "Injects custom functionality (copy URL) on the \"cmd+L\" shortcut when in https://www.notion.so/* pages.",
   "homepage_url": "https://github.com/tsekitsi/cmd-l-hotkey-modifier-chrome-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "content_scripts": [
     {
